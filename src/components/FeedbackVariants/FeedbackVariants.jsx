@@ -1,7 +1,8 @@
 import { StyledList } from "components/StyledCommon/List.styled"
 import { StyledListItem } from "components/StyledCommon/ListItem.styled"
 import {StyledButton} from "components/FeedbackVariants/Button.styled"
-import { PropTypes } from 'prop-types';
+import PropTypes from 'prop-types';
+
 export const FeedbackVariants = (props) => {
     const {variants, onClick} = props
     return (<StyledList>
@@ -22,7 +23,7 @@ export const FeedbackVariants = (props) => {
     </StyledList>)
 }
 
-FeedbackVariants.PropTypes = {
-    variants: PropTypes.arrayOf(PropTypes.string),
-    onClick: PropTypes.func.isRequired
+FeedbackVariants.propTypes = {
+  variants: PropTypes.arrayOf(PropTypes.string),
+  onClick: PropTypes.func
 }

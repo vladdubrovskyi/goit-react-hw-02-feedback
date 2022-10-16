@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledSection = styled.section`
   width: 780px;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 10px;
